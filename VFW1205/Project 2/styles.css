@@ -1,0 +1,66 @@
+body{
+		font-family: Georgia, "Times New Roman", Times, serif;
+		color: #808080;
+		background-color: #ececec;
+}
+
+h2{
+		line-high: 30px;
+		font-weight: bold:
+		font-size: 10px;
+		font-family: "Apple Chancery";
+}
+
+h1{
+		background-color: #d7aaff;
+		text-align: center;
+		padding: 10px;
+		margin: 10px;
+		font-family: "Courier New", Courier, Monaco, monospace;
+		border-color: black;
+		border-style:ridge;
+		
+}
+
+p{
+		color: black;
+		word-wrap: normal;
+		font-family: sans-serif, fantasy;
+}
+
+li{
+		display: table-row;
+		background-color: #dfdfdf;
+		list-style-position: inside;
+		line-height: 15px;
+		font-family: "Courier New", Courier, Monaco, monospace;
+}
+
+fieldset{
+		color: #020202;
+		word-wrap: normal;
+		background-color: #dfdfdf;
+}
+
+form{
+		font-family: Georgia, "Times New Roman", Times, serif;
+		color: black;
+		text-align: left;
+		word-wrap: normal;
+		background-color: silver;
+}
+
+nav{
+		background-color: ;
+		color: blue;
+		padding: 10px;
+		margin: 10px;
+		border-color: black;
+		border-style: groove;
+}
+
+input[type = submit]{
+		color: #030303;
+		font-weight: 16px;
+		background-color: #c3c3c3;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<!--
+  Cheryl Ferguson
+  VFW 1205
+  Project 2
+-->
+<!--Commented out parts are what I wanted to do but could not get to work right-->
+
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta description= "Membership Directory" />
+        <meta keywords="church, membership,directory"/>
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="user-scalable=no, width=device-width" />
+        <meta name="viewport" content="target-densitydpi=device-dpi" />
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320" />
+        <title>Church Directory</title>
+        <!--<link rel="stylesheet" href="additemstyle.css" type="text/css" />-->
+    </head>
+    <body>
+        <h1>Church Membership</h1>
+        <nav>
+            <a href = "#" id = "clearData">Clear Information</a>
+            <a href = "#" id = "displayData">Display Information</a>
+            <a href = "additem.html" id = "addNew" style = "display: none;" >Add Information</a>
+        </nav>
+        <form action="#" method="post" id = "memberForm">
+            
+            <fieldset>
+                <legend>Personal Information</legend>
+                <ul>
+                    <label for="fname">First Name:</label><input type="text" id="fname"><br>
+                    <label for="lname">Last Name:</label><input type="text" id="lname"><br>
+                    <label for="joinDate">Date Joined:</label><input type="date" min="#" max="#" id="joinDate" name="joinDate">
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Personal Details</legend>
+                <span> BOLD fields are required.</span>
+                <ul id="errors"></ul>
+                <ul id="fields">
+                        <label for="email">EMAIL:</label><input type="text" id="email"/>
+                    <br>
+                        <label for="status">Marital Status</label>
+                                <select id="status">
+                                      <option value ="placeholder">Please Select One</option>
+                                      <option value ="single" id="single">Single</option>
+                                      <option value ="married" id="married">Married</option>
+                                      <option value ="divorced" id="divorced">Divorced</option>
+                                      <option value ="widow/widower" id="widow/widower">Widow/Widower</option>
+                                      <option value ="domestic_partnership" id="dompartner">Domestic Partnership</option>
+                                </select><br/>
+                    <li id="select"><label for="status">Marital Status:</label><br /></li>
+
+
+                    <li>BAPTIZED?:
+                        <ul>
+                            <input type="radio" value="Yes" id="yes"  name="baptized" /><label for="yes">Yes</label><br>
+                            <input type="radio" value="No" id="no"  name="baptized" /><label for="no">No</label>
+                        </ul>
+                    </li>
+                    <li>GENDER:</li>
+                    <input type="checkbox" id="gender" value="Male" class = "checkbox" /><label for="gender">Male</label>
+                    <input type="checkbox" id="gender" value="Female" class = "checkbox" /><label for="gender">Female</label>
+                    <li>
+                    <!--<li>What are the uses?:
+                        <ul>
+                            <li><input type="checkbox" value="Stealth" id="stealth" name = "uses"/><label for="stealth">Stealth</label></li>
+                            <li><input type="checkbox" value="Offense" id="offense" name = "uses"/><label for="offense">Offense</label></li>
+                            <li><input type="checkbox" value="Defense" id="defense" name = "uses"/><label for="defense">Defense</label></li>
+                            <li><input type="checkbox" value="Sabotage" id="sabotage" name = "uses"/><label for="sabotage">Sabotage</label></li>
+                            <li><input type="checkbox" value="Recreation" id="recreation" name = "uses"/><label for="recreation">Recreation</label></li>
+                            <li><input type="checkbox" value="Other" id="other" name = "uses"/><label for="other">Other</label></li>
+                        </ul>
+                    </li>-->
+                        <label for="easy">Easy?</label>
+                        <input type="range" min="0" max="10" id="easy" type="range">
+                    </li>
+                    <li>
+                        <span><label for="comments">Comments?:</label></span><textarea id="comments"></textarea>
+                    </li>
+                    <li>
+                        <label for="subDate">Date Submitted:</label><input type="date" min="#" max="#" id="subDate" name="subDate">
+                    </li>
+                </ul>
+            </fieldset>
+            <input type = "submit" value = "Submit Information" id = "saveData"/>
+
+        </form>
+    <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
